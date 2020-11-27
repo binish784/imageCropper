@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Image Cropper</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        
+        <div>
+            <br><br>
+            Select Image<br><br>
+            <button onclick="handleSelectFile(event)">Select </button>
+            <br><br>
+            Diamension
+            <br><br>
+            Height
+            <input type="number" id="canvasHeight" min=150 value=500 onchange="handleCanvasHeight(event)">
+            <br>
+            Width
+            <input type="number" id="canvasWidth" min=150 value=500 onchange="handleCanvasWidth(event)">
+            <br><br>
+
+            Aspect Ratio
+            <br><br>
+            Height
+            <input type="number" id="ratioHeight" min=150 value=1>
+            <br>
+            Width
+            <input type="number" id="ratioWidth" min=150 value=1><br>
+            Scale
+            <input type="number " id="ratioScale" min=40 max=100 value=100>
+            <br><br>
+            <button onclick="applyRatio(event)"> Apply ratio</button>
+            <br><br>
+
+            <button onclick="saveImage()">Save Image</button>
+        </div>
+    
+        <script src="index.js"></script>
+
+    </body>
+</html>
